@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Removebg</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+</head>
+<body>
+  <div class="flex h-[70px] shadow-md ">
+    <a class="ml-8" href="/">
+      <img src="assests/remove.svg" alt="removebg.svg">
+    </a>
+    <a class="w-36 mt-4 ml-[760px]" href="https://liftoffclub.in">
+      <img src="assests/liftoff.svg" alt="liftoff.svg">
+    </a>
+  </div>
+
+  <div class="flex justify-end items-center px-32 py-16">
+    <div class="flex flex-col justify-center">
+      <span class="font-bold mt-12 text-gray-800 text-5xl">Remove Image Background</span>
+      <span class=" text-2xl text-gray-600 mt-6">100% Automatically and Free</span>
+    </div>
+
+    <div id="uploadForm" class="bg-blue-100 rounded-3xl flex flex-col w-2/3 h-80 justify-center items-center">
+      <img class="w-20" src="assests/upload.svg" alt="">
+      <p class="text-2xl font-bold mt-6 text-blue-800">Drag and drop image here</p>
+      <p class="text-lg mt-3">Or</p>
+      <div>
+        <input type="file" class="form-control" id="imageInput" accept="image/*" hidden capture/>
+        <label for="imageInput" class=" bg-blue-800 cursor-pointer text-white font-semibold text-xl px-12 py-2 rounded-full mt-3 file-input-button">Select Image</label>
+        <button class="bg-blue-800 cursor-pointer text-white font-semibold text-xl px-12 py-2 rounded-full mt-3" type="button" onclick="handleupload()">Upload</button>
+      </div>
+    </div>
+    <div id="container">
+    </div>
+  </div>
+</body>
+</html>
